@@ -1,6 +1,7 @@
 package com.ccee.api.dtos;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,5 +10,5 @@ import lombok.Setter;
 @Setter
 public class PrecoMedioDTO {
 
-	private BigDecimal valor;
+	 private List<BigDecimal> valor;
 }

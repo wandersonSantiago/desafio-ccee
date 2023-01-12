@@ -1,7 +1,5 @@
 package com.ccee.api.dtos;
 
-import java.util.List;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +8,7 @@ import lombok.Setter;
 public class RegiaoDTO {
 
     private String sigla;
-    private List<CompraDTO> compras;
-    private List<GeracaoDTO> geracoes;
-    private List<PrecoMedioDTO> precosMedio;
+    private CompraDTO compra;
+    private GeracaoDTO geracao;
+    //private PrecoMedioDTO precoMedio;
 }

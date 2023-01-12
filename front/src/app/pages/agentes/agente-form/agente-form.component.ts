@@ -52,8 +52,8 @@ export class AgenteFormComponent {
         for(let r of item.regiao) {
           let reg  = {
             sigla:r._attributes.sigla,
-            compras: this.ajustarLista(r.compra.valor),
-            geracoes:this.ajustarLista(r.geracao.valor)
+            compra: { valor : this.ajustarLista(r.compra.valor)},
+            geracao:{ valor : this.ajustarLista(r.geracao.valor)}
           };
           regioes.push(reg);
         }
@@ -72,12 +72,8 @@ export class AgenteFormComponent {
 
  private ajustarLista(valores:any){
   let list = [];
-
   for(let c of valores) {
-    let comp = {
-      valor:c._text,
-    }
-     list.push(comp);
+     list.push(c._text);
   }
   return list;
  }
